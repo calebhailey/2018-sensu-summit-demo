@@ -1,0 +1,18 @@
+---
+type: CheckConfig
+api_version: core/v2
+metadata:
+  namespace: default
+  name: check_inspec
+spec:
+  command: "check-inspec.rb -d /opt/specs -t http://sensu-asset-server/assets/test_spec.rb"
+  runtime_assets:
+  - sensu-ruby-2.4.4-debian
+  - sensu-plugins-inspec-v0.0.1
+  publish: true
+  interval: 10
+  subscriptions:
+  - docker
+  output_metric_format: nagios_perfdata
+  output_metric_handlers:
+  - influxdb

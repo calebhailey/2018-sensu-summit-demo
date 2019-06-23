@@ -1,0 +1,9 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: sensu-plugins-inspec-v0.0.1
+  namespace: default
+spec:
+  url: http://sensu-asset-server/assets/sensu-plugins-inspec_0.0.1_debian9_linux_amd64.tar.gz
+  sha512: 41c349cef60a45ea806f94830b77ff8dfc35da973cc6b6e71127198e15c7cddff7073e5e1b957430f594ea50d1bfc3802650b1b98a7b9ae08b537d65a3f22824
